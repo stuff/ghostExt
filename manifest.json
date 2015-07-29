@@ -3,7 +3,7 @@
 
   "name": "Morea Ghost Extension",
   "description": "Will makes your life easier and safer",
-  "version": "0.5",
+  "version": "0.6",
   "content_scripts": [
     {
       "matches": ["https://*.ghost.morea.fr/*"],

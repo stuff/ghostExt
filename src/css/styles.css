@@ -1,3 +1,26 @@
 .apptable {
     border: 3px solid #eee;
 }
+
+.joblist__line--prod {
+    background-color: rgba(217, 83, 79, 0.1);
+
+}
+
+.joblist__line--preprod {
+    background-color: rgba(51, 122, 183, 0.1);
+}
+
+.joblist__case--failed {
+    background-color: #c9302c;
+}
+
+.joblist__case--done {
+    background-color: #5cb85c;
+}
+
+.joblist__case--failed,
+.joblist__case--done,
+.joblist__case--unknown {
+    text-indent: -5000px;
+}
