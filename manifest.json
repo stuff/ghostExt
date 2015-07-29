@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+
+  "name": "Morea Ghost Extension",
+  "description": "Will makes your life easier and safer",
+  "version": "0.5",
+  "content_scripts": [
+    {
+      "matches": ["https://*.ghost.morea.fr/*"],
+      "css": [
+        "src/css/styles.css"
+      ],
+      "js": [
+        "src/js/jquery-2.1.4.min.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.ghost.morea.fr/web/apps"],
+      "js": [
+        "src/js/applist.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.ghost.morea.fr/web/jobs/*"],
+      "js": [
+        "src/js/job.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.ghost.morea.fr/web/jobs"],
+      "js": [
+        "src/js/joblist.js"
+      ]
+    },
+
+    {
+      "matches": ["https://*.ghost.morea.fr/web/apps/*/command"],
+      "js": [
+        "src/js/command.js"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "https://*.ghost.morea.fr/"
+  ]
+}
