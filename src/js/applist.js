@@ -3,14 +3,11 @@
 separateProdPreprod();
 
 function separateProdPreprod () {
-    var $content = $('table'),
-        preprod = [],
-        prod = [];
+    var $content = $('table');
 
     $content.clone().insertAfter($content);
 
-
-    $content.each(function (n, table) {
+    $('table').each(function (n, table) {
         var $table = $(table),
             types = ['prod', 'preprod'],
             type = types[n],
